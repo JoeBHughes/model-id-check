@@ -17,7 +17,7 @@ Coding agents make this worse. In an audit of Claude-written Claude API code, an
 You need Python 3.9 or later. The basic check needs no API key and no other packages.
 
 ```bash
-git clone https://github.com/<your-account>/model-id-check.git
+git clone https://github.com/JoeBHughes/model-id-check.git
 cd model-id-check
 python model_id_check.py /path/to/your/project
 ```
