@@ -1,0 +1,3 @@
+model: claude-3-5-haiku-20241022
+fallback: claude-haiku-5-5
+experimental: claude-made-up-9
