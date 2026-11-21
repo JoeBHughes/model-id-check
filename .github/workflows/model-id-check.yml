@@ -1,0 +1,13 @@
+# Runs the checker on every pull request. An automated job fails the check
+# when the code names a deprecated or retired Claude model.
+name: Claude model ID check
+on: [pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python model_id_check.py . --fail-on deprecated
